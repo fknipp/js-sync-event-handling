@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.console {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  aspect-ratio: 4/3;
+  overflow: scroll;
+}
+
+.console p {
+  margin: 0;
+}
