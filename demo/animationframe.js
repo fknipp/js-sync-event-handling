@@ -4,6 +4,7 @@ import { consoleLog } from "./console.js";
 
 let previousTimestamp = 0;
 
+consoleLog("Click button to start.");
 await clickEvent("button");
 
 while (true) {
