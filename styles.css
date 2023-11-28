@@ -15,7 +15,25 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  margin: -0.5rem;
+}
+
+.flex-container > * {
+  flex: 1 1;
+  border: none;
+  padding: 0.5rem;
 }
 
 .console {

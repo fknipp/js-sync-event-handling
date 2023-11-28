@@ -1,6 +1,6 @@
-import { clickEvent } from './lib/events.js';
-import { hide, show } from './lib/elements.js';
-import { timeout } from './lib/timeout.js';
+import { clickEvent } from '../lib/events.js';
+import { hide, show } from '../lib/elements.js';
+import { timeout } from '../lib/timeout.js';
 
 import { consoleLog } from './console.js';
 
