@@ -6,5 +6,5 @@ while (true) {
   consoleLog("Waiting for a key down event.");
   const ev = await keydownEvent("body");
   console.log(ev);
-  consoleLog(`You clicked the ${ev.key} key (key code ${ev.code}).`);
+  consoleLog(`You pressed the ${ev.key} key (key code ${ev.code}).`);
 }
