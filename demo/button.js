@@ -9,9 +9,12 @@ while (true) {
   const ev = await clickEvent('button');
   consoleLog(`You clicked on ${ev.currentTarget.innerText}.`);
 
-  hide('button');
-  consoleLog('The buttons are hidden.');
+  if(ev.currentTarget.dataset.hide) {
+    hide('button');
+    consoleLog('The buttons are hidden.');
+    await timeout(+ev.currentTarget.dataset.hide);
+    show('button');
+    consoleLog('The buttons are shown again.');  
+  }
   await timeout(1000);
-  show('button');
-  consoleLog('The buttons are shown again.');
 }
