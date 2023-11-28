@@ -26,6 +26,7 @@ h2 {
 .flex-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   height: 80vh;
   margin: -0.5rem;
 }
@@ -34,6 +35,26 @@ h2 {
   flex: 1 1;
   border: none;
   padding: 0.5rem;
+  min-width: 30rem;
+  min-height: 30rem;
+}
+
+.flex-iframe {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.flex-iframe > * {
+  flex: 0 1;
+}
+
+.flex-iframe > p {
+  margin: 0.5rem;
+}
+
+.flex-iframe .console {
+  flex: 1 0;
 }
 
 .console {
